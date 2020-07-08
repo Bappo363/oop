@@ -7,11 +7,16 @@ class Cilinder extends Figuur {
   }
 
   public function getH() {
+    return $this->x;
+  }
+
+  public function getR() {
+    return $this->y;
   }
 
   public function berekenOppervlakte() {
     $opp =
-     (2 * $PI * $this->y * $this->y) + (2 * $PI * $this->y * $this->x);
+     (2 * self::$PI * $this->getR() * $this->getR()) + (2 * self::$PI * $this->getR() * $this->getH());
 
     return $opp;
   }

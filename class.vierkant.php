@@ -1,9 +1,13 @@
 <?php
+
+class Vierkant extends Figuur {
+
 public function __construct ($Ix) {
-  $this->setX($Ix);
+    parent::__construct($Ix);
 }
 
 public function getX() {
+  return $this->x;
 }
 
 public function berekenOppervlakte() {
@@ -11,4 +15,6 @@ public function berekenOppervlakte() {
   ($this->X * $this->X);
 
   return $opp;
+  }
 }
+?>

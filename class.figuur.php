@@ -8,23 +8,33 @@
 
   public function __construct ($Ix, $Iy) {
     $this->setX($Ix);
+    $this->setY($Iy);
   }
 
   public function setX($Ix) {
-    if (!is_int($Ix) {
+    if (!is_int($Ix)) {
       die("dat gaat niet");
     } else {
-      this->x = $Ix;
+      $this->x = $Ix;
     }
   }
 
   public function setY($Iy) {
-    if (!is_int($Iy) {
+    if (!is_int($Iy)) {
       die("dat gaat niet");
     } else {
-      this->y = $Iy;
+      $this->y = $Iy;
     }
   }
 
+  public function setOmschrijving($omschrijving) {
+
+  }
+
+  public function getOmschrijving() {
+
+  }
+
+  public abstract function berekenOppervlakte();
 }
 ?>

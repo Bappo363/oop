@@ -1,11 +1,20 @@
 <?php
 include 'class.figuur.php';
 include 'class.cilinder.php';
-//include 'class.vierkant.php';
+include 'class.vierkant.php';
 
 $cilindertje = new Cilinder(10,5);
-$oopp = $cilindertje->berekenOppervlakte;
+$oopp = $cilindertje->berekenOppervlakte();
 echo "De oppervlakte van de Cilinder met een hoogte van: " . $cilindertje->getH() . " is " . $oopp;
-
-
-$oopp->setX(123123);
+?>
+<br>
+<?php
+$cilinder2 = new Cilinder(12,9);
+$oopp = $cilinder2->berekenOppervlakte();
+echo "De oppervlakte van de Cilinder met een hoogte van: " . $cilindertje->getH() . " is " . $oopp;
+?>
+<br>
+<?php
+$vierkantje = new Vierkant(5);
+$oopp = $vierkantje->berekenOppervlakte();
+echo "De oppervlakte van het Vierkant met een lengte/breete van: " . $vierkantje->getX() . " is " . $oopp;
