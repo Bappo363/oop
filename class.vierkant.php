@@ -12,7 +12,7 @@ public function getX() {
 
 public function berekenOppervlakte() {
   $opp =
-  ($this->X * $this->X);
+  ($this->x * $this->x);
 
   return $opp;
   }
